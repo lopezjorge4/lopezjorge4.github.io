@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+    <title>Audio</title>
+    <link href="../css/style_page.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+         header, nav, main, footer{
+            width: 100%;
+        }
+        main{
+            text-align: center;
+        }
+        section{
+            width: 80%;
+            height: auto;
+            margin: 10px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        audio, iframe{
+            margin: 20px;
+            display: block;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        footer{
+            text-align: center;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tablas en HTML</h1>
+        </header>
+        <nav>
+            <ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../html/enlaces.html">Enlaces</a></li>
+				<li><a href="../html/listas.html">Listas</a></li>
+				<li><a href="../html/tablas.html">Tablas</a></li>
+				<li><a href="../html/imagenes.html">Imágenes</a></li>
+				<li><a href="../html/audio.html">Audio</a></li>
+				<li><a href="../html/video.html">Video</a></li>
+				<li><a href="../html/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Tabla Muestra</h2>
+                <p>Esta página mostrara diferentes tipos de tablas creadas con HTML, la siguiente tabla muetsra contactos de emergencia míos, esta es una tabla básica, casi sin diseño, estos datos son reales.</p>
+                <table border="1">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jorge</td>
+                            <td>Estrada</td>
+                            <td>lópez</td>
+                            <td>2221218766</td>
+                            <td>jorchelopez@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Leticia</td>
+                            <td>Lopez</td>
+                            <td>Guzmán</td>
+                            <td>2227756237</td>
+                            <td>lopezleticiaguzman@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Norberto Victor</td>
+                            <td>Lopez</td>
+                            <td>Guzmán</td>
+                            <td>2227098818</td>
+                            <td>norbertolopez47@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Raúl Alejandro</td>
+                            <td>Salazar</td>
+                            <td>García</td>
+                            <td>7751828466</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Norma</td>
+                            <td>García</td>
+                            <td>Guzmán</td>
+                            <td>2223798581</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla Sencilla</h2>
+                <p>La siguiente tabla muestra información adicional sobre los contáctos mencionados anteriormente, en el caso de los teléfonos, los de la izquierda son números móviles, los de la derecha son números fijos de casa o trabajo.</p>
+                    <table border="1" class="tabla1">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th colspan="2">Teléfono</th>
+                        <th>Correo</th>
+						<th>Lugar de residencia</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jorge</td>
+                            <td>Estrada</td>
+                            <td>lópez</td>
+                            <td>2221218766</td>
+                            <td>2222257595</td>
+                            <td>jorchelopez@gmail.com</td>
+							<td>Puebla</td>
+                        </tr>
+                        <tr>
+                            <td>Leticia</td>
+                            <td>Lopez</td>
+                            <td>Guzmán</td>
+                            <td>2227756237</td>
+                            <td>2222257595</td>
+                            <td>lopezleticiaguzman@gmail.com</td>
+							<td>Puebla</td>
+                        </tr>
+                        <tr>
+                            <td>Norberto Victor</td>
+                            <td>Lopez</td>
+                            <td>Guzmán</td>
+                            <td>2227098818</td>
+                            <td></td>
+                            <td>norbertolopez47@gmail.com</td>
+							<td>Tehuacán</td>
+                        </tr>
+                        <tr>
+                            <td>Raúl Alejandro</td>
+                            <td>Salazar</td>
+                            <td>García</td>
+                            <td>7751828466</td>
+                            <td></td>
+                            <td>raul_a@gmail.com</td>
+							<td>Hidalgo</td>
+                        </tr>
+                        <tr>
+                            <td>Norma</td>
+                            <td>García</td>
+                            <td>Guzmán</td>
+                            <td>2223798581</td>
+                            <td>2223798581</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2>Tabla Zebra</h2>
+                <p>La siguiente tabla mencioná las ultimas cosas que he comprado en páginas de intenet, o tiendas físicas, todos los elementos mostrados son coleccionables, figuras, dispositivos entre otros.</p>
+                <table border="1" id="Tabla2">
+                    <thead>
+                        <th>Artículo</th>
+                        <th>Fecha de compra</th>
+                        <th>Precio Aproximado</th>
+                        <th>Tienda</th>
+                        <th>Calificación 1-5</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bootleg Ironman</td>
+                            <td>Octubre 2024</td>
+                            <td>$126</td>
+                            <td>Aliexpress</td>
+                            <td>3.5/5. Se le rompió una pierna.</td>
+                        </tr>
+                        <tr>
+                            <td>Peluche Sylveon</td>
+                            <td>Octubre 2024</td>
+                            <td>$45</td>
+                            <td>Aliexpress</td>
+                            <td>4.5/5. Me gustó auqnue la percibo algo pequeña.</td>
+                        </tr>
+                        <tr>
+                            <td>Figura Tresh (LoL)</td>
+                            <td>Septiembre 2024</td>
+                            <td>$90</td>
+                            <td>Chingon´s Chop</td>
+                            <td>+5/5. La anduve persiguiendo por 3 años.</td>
+                        </tr>
+                        <tr>
+                            <td>Piccolo Dragon Stars</td>
+                            <td>Noviembre 2023</td>
+                            <td>$600</td>
+                            <td>Gamers</td>
+                            <td>4/5. Buen detalle de la figura.</td>
+                        </tr>
+                        <tr>
+                            <td>Pikachu (Mega Construx)</td>
+                            <td>Julio 2020</td>
+                            <td>$90</td>
+                            <td>Walmart</td>
+                            <td>5/5. Es de "Detective pikachu", incluye su lupa funcional</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla Hover</h2>
+                <p>La siguiente tabla muestra personajes de películas, series, o caricaturas que mas me han gustado, ya sean heroes o villanos, protagonistas o antagonistas, personajes primarios o secundarios, los personajes estaran ordenados de mayor a menor. el orden de las peliculas no muestra algun orden de gusto. </p>
+                 <table border="1" id="Tabla3">
+                    <thead>
+                        <th>Star Wars</th>
+                        <th>Dragon Ball Z</th>
+                        <th>The Walking Dead</th>
+                        <th>Personajes de Marvel</th>
+                        <th>Personajes de DC</th>
+						<th>Pokemón</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Darth Vader</td>
+                            <td>Goku Black</td>
+                            <td>Daryl Dixon</td>
+                            <td>Spiderman (Tobey Maguire)</td>
+                            <td>Batman (Christian Bale)</td>
+							<td>Scizor</td>
+                        </tr>
+                        <tr>
+                            <td>General Grivous</td>
+                            <td>Majin Boo (Forma Final)</td>
+                            <td>Michonne</td>
+                            <td>&nbsp;Deadpool (Ryan Reynolds)</td>
+                            <td>Guasón (Heath Ledger)</td>
+							<td>Cinderace</td>
+                        </tr>
+                        <tr>
+                            <td>Boba Fett</td>
+                            <td>Goku</td>
+                            <td>Gobernador</td>
+                            <td>Ironman (Robert Downey Jr)</td>
+                            <td>Wonde Woman (Gal Gadot)</td>
+							<td>Gardevoir</td>
+                        </tr>
+                        <tr>
+                            <td>Obi-Wan Kenobi</td>
+                            <td>Trunks (Futuro de Z)</td>
+                            <td>Negan</td>
+                            <td>Venom (Tom Hardy)</td>
+                            <td>Batman (Ben Afleck)</td>
+							<td>Gengar&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>R2-D2</td>
+                            <td>Gogeta</td>
+                            <td>Hershel</td>
+                            <td>Iron Patriot (Don Cheadle)</td>
+                            <td>Harley Quinn (Margot Robie)</td>
+							<td>Raikou&nbsp;</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+			</section>
+        </main>
+        <footer>Elaborado ppor: Jorge Estrada López</footer>
+    </body>
+</html>

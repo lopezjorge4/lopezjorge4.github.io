@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios</title>
+<link href="../ACT 4/css/style_page.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <header>
+            <h1>Formularios en HTML</h1>
+        </header>
+<nav>
+            <ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../html/enlaces.html">Enlaces</a></li>
+				<li><a href="../html/listas.html">Listas</a></li>
+				<li><a href="../html/tablas.html">Tablas</a></li>
+				<li><a href="../html/imagenes.html">Imágenes</a></li>
+				<li><a href="../html/audio.html">Audio</a></li>
+				<li><a href="../html/video.html">Video</a></li>
+				<li><a href="../html/formularios.html">Formularios</a></li>>
+            </ul>
+        </nav>
+<main>
+	<section>
+	  <h2>Formulario de Ingreso</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore corrupti dignissimos quis, distinctio, voluptatum esse veritatis ea aut neque ipsa placeat nulla unde error. Soluta recusandae suscipit quam esse quas doloribus voluptates, ducimus inventore nam, libero maxime sapiente exercitationem incidunt blanditiis perferendis officiis eaque doloremque assumenda, repellendus alias id earum. Quo, tempore beatae ea, quasi sapiente, a fugiat nostrum quibusdam quia perspiciatis, necessitatibus! Perspiciatis libero natus officia tempora architecto sunt ab facilis cumque illo nulla nam perferendis, impedit. Perferendis, consequuntur optio rem accusamus natus commodi repellat dignissimos voluptatem ad, ea facilis, voluptas maxime voluptate, porro! Nam quia fuga eum quae?</p>
+	  <form id="form" name="form" method="get">
+	    <label for="textfield">USUARIO:</label>
+        <input name="textfield" type="text" id="textfield" maxlength="30">
+        <label for="password">CONTRASEÑA:</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" name="submit" id="submit" value="Enviar">
+	  </form>
+	</section>
+	<section>
+	  <h2>Formulario de Registro</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sequi tenetur dolorem dolores alias modi quas voluptas cumque nostrum dignissimos, commodi eius minus quos. Iusto unde autem dolore reiciendis possimus, suscipit incidunt aperiam facilis dolor numquam, ab quasi modi quo recusandae nihil in totam. Amet porro, recusandae quam facilis laboriosam autem voluptates, officiis fugit ipsum aperiam obcaecati aliquam labore qui dicta nostrum fugiat quibusdam libero officia ratione quia earum voluptatum ex soluta. Dignissimos inventore praesentium id, debitis et libero ullam repudiandae aut nesciunt repellendus. Dolore, saepe ratione molestias maiores voluptate dolores. Dicta voluptas aliquid ad. Dolore libero ab fuga commodi illum, eveniet magni officia itaque veniam recusandae, debitis eaque provident, odio est. Quos quas officiis totam eius perspiciatis, eum doloremque consectetur error id rerum eaque voluptatem aspernatur praesentium, libero eligendi perferendis provident autem quis eveniet, a maxime cumque nam veritatis sapiente. Reprehenderit placeat ratione, a inventore nesciunt, molestias ad deserunt.</p>
+	  <form id="form" name="form" method="get">
+	    <p>
+	      <label for="NOMBRE">NOMBRE:</label>
+	      <input type="text" name="NOMBRE" id="NOMBRE">
+	      <label for="NOMBRE">APELLIDOS:</label>
+	      <input type="text" name="APELLIDOS" id="APELLIDOS">
+	      <label for="EDAD">EDAD:</label>
+	      <input name="EDAD" type="number" id="EDAD" max="100" min="18">
+	      <label for="PAÍS">PAIS :</label>
+          <select name="PAÍS" id="PAÍS">
+	        <option value="Argentina">ARGENTINA</option>
+	        <option value="Bolivia">BOLIVIA</option>
+	        <option value="Chile">CHILE</option>
+	        <option value="Dinamarca">DINAMARCA</option>
+	        <option value="Ecuador">ECUADOR</option>
+	        <option value="Filipinas">FILIPINAS</option>
+	        <option value="Guatemala">GUATEMALA</option>
+	        <option value="Honduras">HONDURAS</option>
+	        <option value="Italia">ITALIA</option>
+	        <option value="Jamaica">JAMAICA</option>
+	        <option value="México">MÉXICO</option>
+	        <option value="Noruega">NORUEGA</option>
+	        <option value="Panamá">PANAMÁ</option>
+	        <option value="Qatar">QATAR</option>
+	        <option value="Rep. Dom">REP. DOM</option>
+          </select>
+	       <label>GÉNERO<br>
+	         <br>
+<input type="radio" name="G&Eacute;NERO" value="Hombre" id="GEacuteNERO_0">
+	         HOMBRE</label>
+	       <label>
+	         <input type="radio" name="G&Eacute;NERO" value="Mujer" id="GEacuteNERO_1">
+	         MUJER</label>
+	       <label>SELECCIONA TU O TUS GÉNEROS FAVORITOS<br>
+	         <br>
+	         <input type="checkbox" name="Música" value="Rock" id="Muacutesica_0">
+	         ROCK</label>
+	       <label>
+	         <input type="checkbox" name="Música" value="Pop" id="Muacutesica_1">
+	         POP</label>
+	       <label>
+	         <input type="checkbox" name="Música" value="Clásica" id="Muacutesica_2">
+	         CLÁSICA</label>
+	       <label>
+	         <input type="checkbox" name="Música" value="Opera" id="Muacutesica_3">
+	         OPERA</label>
+	       <label>
+	         <input type="checkbox" name="Música" value="Jazz" id="Muacutesica_4">
+	         JAZZ</label>
+	       <br>
+	      <input type="submit" name="submit" id="submit" value="Enviar">
+        </p>
+	  </form>
+  </section>
+	<section>
+		<h2>Tabla Personalizada</h2>
+<form id="form" name="form" method="get">
+	    <p>
+	    <label for="textfield">Nombre/s:</label>
+        <input type="text" name="textfield" id="textfield">
+        <label for="textfield">Apellido Materno:</label>
+        <input type="text" name="textfield" id="textfield">
+        <label for="textfield">Apellido Paterno:</label>
+        <input type="text" name="textfield" id="textfield">
+			  <label>Seleccione su género:<br>
+	         <br>
+            <input type="radio" name="G&eacute;nero" value="Hombre" id="Geacutenero_0">
+          Hombre</label>
+          <label>
+            <input type="radio" name="G&eacute;nero" value="Mujer" id="Geacutenero_1">
+            Mujer
+          </label>
+          <label>
+            <input type="radio" name="G&eacute;nero" value="Otro" id="Geacutenero_2">
+			  Otro</label>	
+		  <label for="EDAD">EDAD:</label>
+	      <input name="EDAD" type="number" id="EDAD" max="100" min="18">
+          <label for="date">Selecciona tu fecha de Nacimiento:></label>
+        <input type="date" name="date" id="date">
+        <label for="select">Selecciona tu Ciudad:</label>
+        <select name="select" id="select">
+          <option value="Aguascalientes">AGUASCALIENTES</option>
+          <option value="Baja California">BAJA CALIFORNIA</option>
+          <option value="Baja California Sur">BAJA CALIFORNIA SUR</option>
+          <option value="Campeche">CAMPECHE</option>
+          <option value="Chiapas">CHIAPAS</option>
+          <option value="Chihuahua">CHIHUAHUA</option>
+          <option value="Cuidad de Méxica">CIUDAD DE MÉXICO</option>
+          <option value="Coahuila">COAHULIA</option>
+          <option value="Colima">COLIMA</option>
+          <option value="Durango">DURANGO</option>
+          <option value="Guanajuato">GUANNAJUATO</option>
+          <option value="Guerrero">GUERRERO</option>
+          <option value="Hidalgo">HIDALGO</option>
+          <option value="Jalisco">JALISCO</option>
+          <option value="Estado de México">ESTADO DE MÉXICO</option>
+          <option value="Michoacán">MICHOACÁN</option>
+          <option value="Morelos">MORELOS</option>
+          <option value="Nayarit">NAYARIT</option>
+          <option value="Nuevo León">NUEVO LEÓN</option>
+          <option value="Oaxaca">OAXACA</option>
+          <option value="Puebla">PUEBLA</option>
+          <option value="Querétaro">QUERÉTARO</option>
+          <option value="Quintana Roo">QUINTANA ROO</option>
+          <option value="San Luis Potosí">SAN LUIS POTOSÍ</option>
+          <option value="Sinaloa">SINALOA</option>
+          <option value="Sonora">SONORA</option>
+          <option value="Tabasco">TABASCO</option>
+          <option value="Tamaulipas">TAMAULIPAS</option>
+          <option value="Oaxaca">TLAXCALA</option>
+          <option value="Veracruz">VERACRUZ</option>
+          <option value="Yucatán">YUCATÁN</option>
+          <option value="Zacatecas">ZACATECAS</option>
+        </select>
+			  <label for="phone">Introduzca número telefónico:</label>
+			  <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+			  <label for="appt">Seleccione la hora de su preferencia:</label>
+			<input type="time" id="appt" name="appt">
+			<label>En caso de tener algún documento, de anexo necesario para su próxima consulta, incluyalo AQUI:</label>
+			<label for="myfile">Selecciona tu archivo:</label>
+			<input type="file" id="myfile" name="myfile">
+			  <input name="submit" type="submit" id="submit" formmethod="GET" value="Enviar">
+			  <input type="reset" name="Reset" id="Reset" value="Reset">
+        </p>
+      </form>
+    </section>
+</main>
+        <footer>
+          <h5>Elaborado por Jorge Estrada Lopez</h5>
+</footer>
+</body>
+</html>
